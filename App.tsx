@@ -4,11 +4,12 @@ import { StyleSheet, Text, View } from 'react-native';
 
 import styles from './styles/mainStyles';
 
+import Dashboard from './components/dashboard/Dashboard';
+
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Welcome!</Text>
-      <StatusBar style="auto" />
+      <Dashboard />
     </View>
   );
 }
