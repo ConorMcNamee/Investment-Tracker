@@ -9,7 +9,7 @@
     - React Native Chart Kit
   
 
-# How to Run
+# How to Run:
 
   - Clone the repo  
   - run 'npm start'
