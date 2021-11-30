@@ -8,6 +8,10 @@ const styles = StyleSheet.create({
       alignItems: 'center',
     },
 
+    chartContainer: {
+
+    },
+
     listItem: {
       flexDirection: "row",
       padding:16,

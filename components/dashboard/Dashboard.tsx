@@ -4,14 +4,8 @@ import { View, Text, SectionList, ScrollView } from "react-native";
 
 import styles from "../../styles/mainStyles";
 
-interface Investment {
-    id: number,
-    investmentTitle: string,
-    amount: number,
-    weekly: boolean, // If not weekely then payments are added monthly
-    recurringAmount: number
-}
-
+import PieChart from "./PieChart";
+import Investment from "../Investment";
 
 const Dashboard = () => {
 
@@ -28,19 +22,25 @@ const Dashboard = () => {
 
     return (
         <View>
-            {
-                investments.map((investment) => {
-                    return (
-                        <View key={investment.id} style={styles.listItem}>
-                            
-                                <View style={styles.listContainer}>
-                                    <Text style={styles.listItemText}>{investment.amount}</Text>
-                                    <Text style={styles.listItemText}>{investment.investmentTitle}</Text>
+        
+            <View style={styles.chartContainer}>
+                <PieChart Investments={investments} />
+            </View>
+            
+            <ScrollView>
+                {
+                    investments.map((investment) => {
+                        return (
+                                <View key={investment.id} style={styles.listItem}>
+                                        <View style={styles.listContainer}>
+                                            <Text style={styles.listItemText}>{investment.amount}</Text>
+                                            <Text style={styles.listItemText}>{investment.investmentTitle}</Text>
+                                        </View>
                                 </View>
-                        </View>
-                    )
-                })
-            }
+                        )
+                    })
+                }
+            </ScrollView>
         </View>
     );
 }
