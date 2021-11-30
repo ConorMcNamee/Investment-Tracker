@@ -23,4 +23,11 @@ Designs for the app:
 
 ![image](https://user-images.githubusercontent.com/54962432/143921410-97881895-88cb-4718-a527-8764de543d72.png)
 
+# Todo:
+
+  - [] Add Pie chart to Dashboard
+  - [] Add Navbar at the bottom
+  - [] Create CRUD features and save to local storage
+  - [] Add Animations to Pie Chart
+
 
