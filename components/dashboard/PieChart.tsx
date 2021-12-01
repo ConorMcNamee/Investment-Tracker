@@ -1,13 +1,19 @@
 import React from "react";
+import { View, Text } from "react-native";
+import { Path, Svg, Circle } from "react-native-svg";
 
 import Investment from "../Investment";
 
-const PieChart = (props:Investment[]) => {
+import styles from "../../styles/mainStyles";
+
+const PieChart = () => {
 
     return (
-        <div>
-            
-        </div>
+        <View>
+            <Svg height="300" width="300">
+                <Circle cx="150" cy="150" r="140" stroke="#fff" strokeWidth="20" />
+            </Svg>
+        </View>
     )
 }
 

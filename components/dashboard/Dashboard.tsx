@@ -24,7 +24,7 @@ const Dashboard = () => {
         <View>
         
             <View style={styles.chartContainer}>
-                <PieChart Investments={investments} />
+                <PieChart></PieChart>
             </View>
             
             <ScrollView>
