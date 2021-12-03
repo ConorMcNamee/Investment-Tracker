@@ -5,6 +5,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import styles from './styles/mainStyles';
 
 import Dashboard from './components/dashboard/Dashboard';
+import Navbar from './components/Navbar/Navbar';
 
 export default function App() {
   return (

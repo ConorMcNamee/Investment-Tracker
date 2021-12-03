@@ -11,10 +11,11 @@ const Dashboard = () => {
 
     const [investments, addInvestments] = useState<Investment[]>(
         [
-            {id: 0, investmentTitle: 'Bitcoin', amount: 1000, weekly: false, recurringAmount: 50},
-            {id: 1, investmentTitle: 'Ethereum', amount: 1000, weekly: false, recurringAmount: 50},
+            {id: 0, investmentTitle: 'Bitcoin', amount: 1000000, weekly: false, recurringAmount: 50},
+            {id: 1, investmentTitle: 'Ethereum', amount: 100000, weekly: false, recurringAmount: 50},
             {id: 2, investmentTitle: 'XRP', amount: 100, weekly: false, recurringAmount: 50},
             {id: 3, investmentTitle: 'Luna ', amount: 100, weekly: false, recurringAmount: 50},
+            {id: 4, investmentTitle: 'ASTRA ', amount: 400, weekly: false, recurringAmount: 50},
         ]
     );
 

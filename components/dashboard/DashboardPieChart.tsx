@@ -12,10 +12,13 @@ import { StyleSheet } from "react-native";
 const PieChartStyles = StyleSheet.create({
     pieChartText: {
         color: '#fff',
-        fontSize: 64,
+        fontSize: 56,
         position: 'absolute',
-        top: '38%',
-        left: '28%'
+        width: '100%',
+        height: '100%',
+        justifyContent: 'center',
+        textAlignVertical: 'center',
+        textAlign: 'center',
     },
 });
 
@@ -34,6 +37,7 @@ const DashboardPieChart:React.FC<{investments:Investment[]}> = (investments) => 
         chartData.map((item) => {
             total += item.y
         })
+        
         return total;
     }
 
@@ -42,7 +46,7 @@ const DashboardPieChart:React.FC<{investments:Investment[]}> = (investments) => 
     return (
         <View>
             <VictoryPie 
-                innerRadius={128}
+                innerRadius={140}
                 radius={160}
                 data={chartData}
             />
