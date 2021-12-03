@@ -25,11 +25,11 @@ Designs for the app:
 
 # Todo:
 
-  - [ ] Add Pie chart to Dashboard
   - [ ] Add Navbar at the bottom
   - [ ] Create CRUD features and save to local storage
   - [ ] Add Animations to Pie Chart
   - [ ] Refactor the styling files
   - [ ] Create page while multiple visualisations of charts for investments
+  - [ ] Format the Pie chart text to add commas
 
 
