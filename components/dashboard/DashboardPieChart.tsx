@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text } from "react-native";
-import { VictoryPie } from "victory-pie";
+import { VictoryPie } from "victory-native";
 
 import Investment from "../Investment";
 
@@ -13,10 +13,9 @@ const PieChartStyles = StyleSheet.create({
     pieChartText: {
         color: '#fff',
         fontSize: 64,
-        height: 21,
         position: 'absolute',
-        top: '41%',
-        left: '41%'
+        top: '38%',
+        left: '28%'
     },
 });
 

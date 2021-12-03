@@ -17,19 +17,34 @@ const styles = StyleSheet.create({
     listContainer: {
       flexDirection: "row",
       backgroundColor: "#9C4717",
-      padding: 8,
       width: 300,
       overflow: "hidden",
-      justifyContent: "center",
+      justifyContent: "space-between",
 
-      borderTopRightRadius: 24,
-      borderBottomLeftRadius: 24,
+      borderBottomRightRadius: 24,
+      borderTopLeftRadius: 24,
     },
 
     listItemText: {
       color: '#fff',
       padding: 16,
       fontSize: 32,
+      justifyContent: "space-between",
+      textAlign: "center",
+    },
+
+    ListItemAmount: {
+      color: '#fff',
+      padding: 16,
+      fontSize: 24,
+      justifyContent: "space-between",
+      textAlign: "center",
+    },
+
+    listItemLabel: {
+      color: '#fff',
+      padding: 16,
+      fontSize: 24,
       justifyContent: "space-between",
       textAlign: "center",
     },
