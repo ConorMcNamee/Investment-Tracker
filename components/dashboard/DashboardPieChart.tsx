@@ -1,19 +1,32 @@
 import React from "react";
 import { View, Text } from "react-native";
-import { VictoryPie } from "victory-native";
+import { VictoryPie } from "victory-pie";
 
 import Investment from "../Investment";
 
 import styles from "../../styles/mainStyles";
 import { useState } from "react";
 import { Colors } from "react-native/Libraries/NewAppScreen";
+import { StyleSheet } from "react-native";
+
+const PieChartStyles = StyleSheet.create({
+    pieChartText: {
+        color: '#fff',
+        fontSize: 64,
+        height: 21,
+        position: 'absolute',
+        top: '41%',
+        left: '41%'
+    },
+});
 
 const DashboardPieChart:React.FC<{investments:Investment[]}> = (investments) => {
 
     const chartData = investments.investments.map((item) => {
         return{
-            x: item.investmentTitle,
-            y: item.amount
+            x: item.amount,
+            y: item.amount,
+            label: " "
         }
     })
 
@@ -30,10 +43,11 @@ const DashboardPieChart:React.FC<{investments:Investment[]}> = (investments) => 
     return (
         <View>
             <VictoryPie 
-                innerRadius={100}
+                innerRadius={128}
+                radius={160}
                 data={chartData}
             />
-            <Text>{total}</Text>
+            <Text style={PieChartStyles.pieChartText}>${total}</Text>
         </View>
     )
 }
