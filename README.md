@@ -29,5 +29,7 @@ Designs for the app:
   - [ ] Add Navbar at the bottom
   - [ ] Create CRUD features and save to local storage
   - [ ] Add Animations to Pie Chart
+  - [ ] Refactor the styling files
+  - [ ] Create page while multiple visualisations of charts for investments
 
 

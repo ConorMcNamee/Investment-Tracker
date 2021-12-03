@@ -8,12 +8,9 @@ const styles = StyleSheet.create({
       alignItems: 'center',
     },
 
-    chartContainer: {
-
-    },
-
     listItem: {
       flexDirection: "row",
+      justifyContent: "center",
       padding:16,
     },
 
@@ -21,6 +18,7 @@ const styles = StyleSheet.create({
       flexDirection: "row",
       backgroundColor: "#9C4717",
       padding: 8,
+      width: 300,
       overflow: "hidden",
       justifyContent: "center",
 
