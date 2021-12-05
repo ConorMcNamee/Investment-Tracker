@@ -1,17 +1,29 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { NavigationContainer } from '@react-navigation/native';
 
-import styles from './styles/mainStyles';
+import { TabActionType } from '@react-navigation/routers';
 
-import Dashboard from './components/dashboard/Dashboard';
-import Navbar from './components/Navbar/Navbar';
+import Navigation from './components/navigation/Navigation';
+
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#212032',
+    alignItems: 'center',
+  },
+});
+
+
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Dashboard />
-    </View>
+    <NavigationContainer>
+      <Navigation />
+    </NavigationContainer>
   );
 }
 

@@ -4,7 +4,6 @@ import { VictoryPie } from "victory-native";
 
 import Investment from "../Investment";
 
-import styles from "../../styles/mainStyles";
 import { useState } from "react";
 import { Colors } from "react-native/Libraries/NewAppScreen";
 import { StyleSheet } from "react-native";

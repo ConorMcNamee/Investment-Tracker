@@ -1,8 +1,13 @@
 import React from "react";
 import { View, Text } from "react-native";
+import { StyleSheet } from "react-native";
 
-import styles from "../../styles/mainStyles";
-
+const styles = StyleSheet.create({
+    text: {
+        color: '#fff',
+        fontSize: 32,
+      },
+});
 
 const InvestmentList = () => {
 
