@@ -11,7 +11,7 @@ import { StyleSheet } from "react-native";
 const PieChartStyles = StyleSheet.create({
     pieChartText: {
         color: '#fff',
-        fontSize: 56,
+        fontSize: 40,
         position: 'absolute',
         width: '100%',
         height: '100%',

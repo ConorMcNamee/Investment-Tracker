@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
 
 import { TabActionType } from '@react-navigation/routers';
 
@@ -17,14 +17,15 @@ const styles = StyleSheet.create({
   },
 });
 
-
-
-export default function App() {
+const App = () => {
   return (
-    <NavigationContainer>
-      <Navigation />
-    </NavigationContainer>
+      <NavigationContainer>
+        <Navigation />
+      </NavigationContainer>
   );
 }
+
+export default App;
+
 
 

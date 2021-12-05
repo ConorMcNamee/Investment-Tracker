@@ -10,7 +10,21 @@ const Tab = createBottomTabNavigator();
 const Navigation = () => {
 
     return (
-        <Tab.Navigator>
+        <Tab.Navigator
+            screenOptions = {({route}) => ({
+                headerShown: false,
+                tabBarShowLabel: false,
+                tabBarStyle: {
+                    backgroundColor: '#14141F',
+                    borderTopLeftRadius: 16,
+                    borderTopRightRadius: 16,
+                    elevation: 0,
+                    height: 80,
+
+                },
+                tabBarActiveTintColor: '#fff',
+            })}
+        >
             <Tab.Screen name="Dashboard" component={Dashboard}/>
         </Tab.Navigator>
     );
