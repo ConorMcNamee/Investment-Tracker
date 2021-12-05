@@ -12,10 +12,15 @@ const styles = StyleSheet.create({
         backgroundColor: '#212032',
         alignItems: 'center',
       },
+
+      scrollListView: {
+        maxHeight: '40%',
+      },
+
       listItem: {
         flexDirection: "row",
         justifyContent: "center",
-        padding:16,
+        padding: 8,
       },
   
       listContainer: {
@@ -78,7 +83,7 @@ const Dashboard = () => {
                 <DashboardPieChart investments={investments} />
             </View>
             
-            <ScrollView>
+            <ScrollView style={styles.scrollListView}>
                 {
                     investments.map((investment) => {
                         return (
